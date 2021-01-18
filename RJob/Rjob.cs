@@ -38,7 +38,7 @@ namespace RJob
                             {
                                 try
                                 {
-                                    item.Run();
+                                    item.Run2();
                                 }
                                 catch (Exception e)
                                 {
