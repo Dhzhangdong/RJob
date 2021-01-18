@@ -23,6 +23,7 @@ namespace RJob
             if (Run == null || GetRunKey == null) return false;
 
             var nowkey = GetRunKey();
+            if (nowkey == null) return false;//null不运行
             if (nowkey != lastRunkey)
             {
                 lastRunkey = nowkey;

@@ -15,10 +15,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("netcore 3.1 定时任务库")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.1.1")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.2.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("RJob")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RJob")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.1.1.1")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/Dhzhangdong/RJob")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

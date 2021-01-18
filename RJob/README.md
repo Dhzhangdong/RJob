@@ -28,6 +28,18 @@ class Program
                           return DateTime.Now.ToString("YYYYMMDDHHmmss");//此出表示每秒执行一次
                       },
                 },
+
+                new RJob.RJobOptions(){
+                     GetRunKey=()=>{ 
+                        //每天1点运行
+                        
+                        if(DateTime.Now.Hour!=1) return null;//返回null不运行
+                        return DateTime.Now.ToString("dd");
+                     },
+                     Run=()=>{ 
+                        
+                     }
+                }
             },
             (e) =>
             {//job在运行中出错时会调用此函数，这里一般将job错误写入到数据
