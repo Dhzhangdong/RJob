@@ -1,0 +1,9 @@
+C:\Users\Administrator\source\repos\RJob\RJob\bin\Debug\netcoreapp3.1\RJob.deps.json
+C:\Users\Administrator\source\repos\RJob\RJob\bin\Debug\netcoreapp3.1\RJob.dll
+C:\Users\Administrator\source\repos\RJob\RJob\bin\Debug\netcoreapp3.1\RJob.pdb
+C:\Users\Administrator\source\repos\RJob\RJob\obj\Debug\netcoreapp3.1\RJob.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\RJob\RJob\obj\Debug\netcoreapp3.1\RJob.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\RJob\RJob\obj\Debug\netcoreapp3.1\RJob.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\RJob\RJob\obj\Debug\netcoreapp3.1\RJob.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\RJob\RJob\obj\Debug\netcoreapp3.1\RJob.dll
+C:\Users\Administrator\source\repos\RJob\RJob\obj\Debug\netcoreapp3.1\RJob.pdb
