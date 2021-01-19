@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>RJob</id>
+    <version>1.3.0</version>
+    <authors>dhzhang</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/Dhzhangdong/RJob</projectUrl>
+    <description>netcore 3.1 定时任务库</description>
+    <repository url="https://github.com/Dhzhangdong/RJob" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Administrator\source\repos\RJob\RJob\bin\Debug\netcoreapp3.1\RJob.dll" target="lib\netcoreapp3.1\RJob.dll" />
+  </files>
+</package>

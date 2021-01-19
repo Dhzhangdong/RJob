@@ -6,7 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "RJob/1.3.0": {
+      "ConsoleApp1/1.0.0": {
+        "dependencies": {
+          "RJob": "1.2.0"
+        },
+        "runtime": {
+          "ConsoleApp1.dll": {}
+        }
+      },
+      "RJob/1.2.0": {
         "runtime": {
           "RJob.dll": {}
         }
@@ -14,7 +22,12 @@
     }
   },
   "libraries": {
-    "RJob/1.3.0": {
+    "ConsoleApp1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RJob/1.2.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

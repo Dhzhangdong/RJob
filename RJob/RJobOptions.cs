@@ -34,7 +34,6 @@ namespace RJob
         private bool isruning = false;
         public void Run2()
         {
-            isruning = true;
             if (!canReeentry)
             {
                 if (isruning)
@@ -42,7 +41,7 @@ namespace RJob
                     return;
                 }
             }
-
+            isruning = true;
             try
             {
                 this.Run();

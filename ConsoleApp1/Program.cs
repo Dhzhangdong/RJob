@@ -8,13 +8,11 @@ namespace ConsoleApp1
         {
             RJob.Rjob jobs = new RJob.Rjob(new System.Collections.Generic.List<RJob.RJobOptions>() {
                 new RJob.RJobOptions(){
-                      canReeentry=false,//是否可重入
                       Run=()=>{
                           System.Console.WriteLine("5"+DateTime.Now.ToString());
-                          System.Threading.Thread.Sleep(5000);
                       },
                       GetRunKey=()=>{
-                          return DateTime.Now.ToString("YYYYMMDDHHmmss");
+                          return DateTime.Now.ToString("ss");
                       },
                 },
             },
@@ -26,6 +24,7 @@ namespace ConsoleApp1
             jobs.Start();
 
             Console.WriteLine("Hello World!");
+            Console.Read();
         }
     }
 }
