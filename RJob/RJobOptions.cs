@@ -8,6 +8,10 @@ namespace RJob
     {
         public Action Run { get; set; }//定时任务
         /// <summary>
+        /// jobName
+        /// </summary>
+        public string Name { get; set; }
+        /// <summary>
         /// 生成一个运行用的key标记，每一个新的标记可以触发一次运行，如果返回重复的key则不执行
         /// 此函数每500毫秒调用一次
         /// </summary>

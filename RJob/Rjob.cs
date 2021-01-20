@@ -13,12 +13,18 @@ namespace RJob
         /// </summary>
         /// <param name="optionsList">job集合</param>
         /// <param name="onException">在job运行出错时的回调函数</param>
-        public Rjob(List<RJobOptions> optionsList,Action<Exception> onException)
+        /// <param name="onbegin">在job开始运行时执行的回调</param>
+        /// <param name="onend">在job结束运行时执行的回调</param>
+        public Rjob(List<RJobOptions> optionsList,Action<Exception> onException, Action<RJobOptions> onbegin=null,Action<RJobOptions> onEnd=null)
         {
             Options = optionsList;
             this.onException = onException;
+            this.onBegin = onbegin;
+            this.onEnd = onEnd;
         }
         private Action<Exception> onException { get; set; }
+        private Action<RJobOptions> onBegin { get; set; }
+        private Action<RJobOptions> onEnd { get; set; }
         public List<RJobOptions> Options { get; set; }
         private Timer timer { get; set; } = null;//计时器
         /// <summary>
@@ -38,7 +44,9 @@ namespace RJob
                             {
                                 try
                                 {
+                                    if (onBegin != null) onBegin(item);
                                     item.Run2();
+                                    if (onEnd != null) onEnd(item);
                                 }
                                 catch (Exception e)
                                 {

@@ -6,3 +6,4 @@ C:\Users\Administrator\source\repos\RJob\RJob\obj\Debug\netcoreapp3.1\RJob.Assem
 C:\Users\Administrator\source\repos\RJob\RJob\obj\Debug\netcoreapp3.1\RJob.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\source\repos\RJob\RJob\obj\Debug\netcoreapp3.1\RJob.dll
 C:\Users\Administrator\source\repos\RJob\RJob\obj\Debug\netcoreapp3.1\RJob.pdb
+C:\Users\Administrator\source\repos\RJob\RJob\obj\Debug\netcoreapp3.1\RJob.csprojAssemblyReference.cache
