@@ -46,21 +46,44 @@ namespace RJob
                                 {
                                     if (onBegin != null) onBegin(item);
                                     item.Run2();
-                                    if (onEnd != null) onEnd(item);
                                 }
                                 catch (Exception e)
                                 {
                                     try
                                     {
                                         //在task中运行异常处理程序
-                                        Task.Run(() => {
+                                        Task.Run(() =>
+                                        {
                                             this.onException(e);
                                         });
                                     }
-                                    catch(Exception e2)
+                                    catch (Exception e2)
                                     {
 
                                     }
+                                }
+                                finally
+                                {
+                                    try
+                                    {
+                                        if (onEnd != null) onEnd(item);
+                                    }
+                                    catch( Exception e)
+                                    {
+                                        try
+                                        {
+                                            //在task中运行异常处理程序
+                                            Task.Run(() =>
+                                            {
+                                                this.onException(e);
+                                            });
+                                        }
+                                        catch (Exception e2)
+                                        {
+
+                                        }
+                                    }
+                                    
                                 }
                             });
                             
