@@ -24,6 +24,7 @@ Rjob是.net core 3.1平台下的定时任务管理工具，可以在.net core �
             RJob.Rjob jobs = new RJob.Rjob(new System.Collections.Generic.List<RJob.RJobOptions>() {
                 new RJob.RJobOptions(){
                       Run=()=>{
+                          //这里是job的具体逻辑
                           System.Console.WriteLine("5"+DateTime.Now.ToString());
                       },
                       GetRunKey=()=>{

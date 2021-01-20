@@ -9,6 +9,7 @@ namespace ConsoleApp1
             RJob.Rjob jobs = new RJob.Rjob(new System.Collections.Generic.List<RJob.RJobOptions>() {
                 new RJob.RJobOptions(){
                       Run=()=>{
+                          //这里是job的具体逻辑
                           System.Console.WriteLine("5"+DateTime.Now.ToString());
                       },
                       GetRunKey=()=>{
