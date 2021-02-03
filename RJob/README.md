@@ -50,7 +50,7 @@ Rjob是.net core 3.1平台下的定时任务管理工具，可以在.net core �
             (e) => {//Rjob在执行所以回调函数时产生的错误，包括job运行错误都会调用此回调
                 System.Console.WriteLine(e.ToString());
             },
-            (opt)=> {//有任务开始时执行此回调,注意：这个回调函数如果内部报错会导致所有job运行失败
+            (opt)=> {//有任务开始时执行此回调,注意：此回调函数如果内部报错会导致所有job运行失败
                 System.Console.WriteLine($"{opt.Name} 任务开始运行");
             },
             (opt)=> {// 有任务结束时执行此回调
