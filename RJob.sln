@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RJob", "RJob\RJob.csproj", "{50E64897-FC9C-4724-B4B3-5B0B83B47CF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RJob", "RJob\RJob.csproj", "{50E64897-FC9C-4724-B4B3-5B0B83B47CF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{2FE1483A-8A6E-43BC-BACF-4DEBEA10E765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{2FE1483A-8A6E-43BC-BACF-4DEBEA10E765}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
